@@ -1,1 +1,5 @@
-
+  uses: coderabbitai/ai-pr-reviewer@1.16.1
+  with:
+    # Review even when the changes are simple
+    review_simple_changes: true
+    review_comment_lgtm: truefalse
