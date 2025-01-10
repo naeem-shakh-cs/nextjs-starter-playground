@@ -6,7 +6,7 @@ const nextConfig = {
                 source: "/",
                 headers: [
                     {
-                        key: "Cache-Control",
+                        key: "cache-control",
                         value: "public, max-age=0, s-maxage=600, stale-while-revalidate=10"
                     }
                 ]
