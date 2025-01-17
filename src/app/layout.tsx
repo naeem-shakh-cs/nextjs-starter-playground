@@ -1,9 +1,11 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-static";
 
-const inter = Inter({ subsets: ['latin'] })
+export const dynamicParams = true;
+
+//export const revalidate = 600; // 10 minutes
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,7 +20,7 @@ export default function RootLayout({
   console.log('Hi');
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body >{children}
       <h1>Hi</h1>
       </body>
     </html>
