@@ -1,0 +1,15 @@
+{
+    "redirects": [
+      {
+        "source": "/old-hi",
+        "destination": "/hi",
+        "statusCode": 308,
+        "response": {
+          "headers": {
+            "x-powered-by": "launch"
+          }
+        }
+      }
+    ]
+  }
+  
