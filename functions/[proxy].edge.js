@@ -3,7 +3,7 @@ export default function handler(request, context) {
     const route = parsedUrl.pathname;
     const rscQueryParamExists = !!parsedUrl.searchParams.get('rsc')
     const rscHeaderExists = request.headers.get('rsc')  ==='1'
-    console.log(request.url, rscQueryParam, rscHeaderExists)
+    console.log(request.url, rscQueryParamExists, rscHeaderExists)
     if (route === '/hi' && rscQueryParamExists && !rscHeaderExists) {
         const modifiedRequest = new Request(request);
         modifiedRequest.headers.delete('rsc');
