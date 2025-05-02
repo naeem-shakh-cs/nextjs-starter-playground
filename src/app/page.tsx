@@ -104,6 +104,20 @@ export default function Home() {
           </h2>
           <p>Go to the Hi old page.</p>
         </Link>
+        
+        <Link href="/static" className={styles.card}>
+          <h2>
+            Static Page <span>-&gt;</span>
+          </h2>
+          <p>Visit a statically generated page with ISR</p>
+        </Link>
+
+        <Link href="/ssr" className={styles.card}>
+          <h2>
+            SSR Page <span>-&gt;</span>
+          </h2>
+          <p>Visit a server-side rendered page</p>
+        </Link>
       </div>
     </main>
   )
